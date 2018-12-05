@@ -2,7 +2,7 @@
 pchangetools
 ===============================
 
-.. image:: https://img.shields.io/travis/scollis/pchangetools.svg
+.. image:: https://travis-ci.org/ANL-DIGR/pchangetools.svg
         :target: https://travis-ci.org/scollis/pchangetools
 
 .. image:: https://img.shields.io/pypi/v/pchangetools.svg
