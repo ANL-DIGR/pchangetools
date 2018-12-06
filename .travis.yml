@@ -1,6 +1,12 @@
 language: python
 python:
   - 3.6
+
+env:
+  global:
+  # Doctr deploy key for ANL-DIGR/pchangetools
+  - secure: "lt/jMDyPNxUXVOSBR4goNewiHIXGDOSEUWP3ldz2CyKCe6QLYfzHiHDlEZv+TQGbEXNRF2DQrdYCUxolyceywZMmjxvKp4j1Q4mNv2Yqd5MKFByqaWN6RLpZmR/xu5FUr5LxCJv7np/WeHZfyO+mLXgTcVWCQew7wx/39davquwMI3kC0yhQZ2z4DcPfsDY03aMfB3h7ywsTDjoemUtUhTde8ZpeilMQFUcwbmicWvXlMECDV4N8v+p6V3f6Kb5/1Mvm1I9zqINSXZx25BqkdtN+KtN3vqFm1LANtAQjZyvFRzX04MKVfd4UpAVSoVC6Xmvn5u9miLv3ANo/ygYh3g6WppywYrQ7wveHD2NUI3SuESRgWtuE1/FEg0sq1klzqejDAzpLSj6Q6wVQKu15tS8N5+nZE76VpaxQo95UiCso6fer3ReFXHu7H+i4+Ek0unIozgl3rPqcGvr27h6E1LoD68ySBtWNj/s2bQWy8rLk5aIdwKroFauYSA314wOP7E0Tck3MrIPEtsQRB3kuujVI416CtqBWNFxOgPIMiTJ3Vix1Ik3QSNgjowslVXPIBn+PKJuLhKyVT626GnNVL6E52OGn3AIDMgSt8LhUe9GjZGd2kgtrVkzzcpT7gkj1t/WxvRiA0DqIR8RtBhCbzWwAAMUeLHNykSIyNde7J+8="
+
 cache:
   directories:
     - $HOME/.cache/pip
@@ -18,3 +24,7 @@ script:
   - codecov  # Upload the report to codecov.
   - flake8 --max-line-length=115  # Enforce code style (but relax line length limit a bit).
   - make -C docs html  # Build the documentation.
+  - set -e
+  - make -C docs html
+  - pip install doctr
+  - doctr deploy --built-docs docs/build/html .
