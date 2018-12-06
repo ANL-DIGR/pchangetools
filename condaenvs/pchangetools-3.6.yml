@@ -1,0 +1,19 @@
+name: pchangetools-dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - xarray
+  - codecov
+  - coverage
+  - flake8
+  - pytest
+  - sphinx
+  # These are dependencies of various sphinx extensions for documentation.
+  - ipython
+  - matplotlib
+  - numpydoc
+  - sphinx_rtd_theme
+  - pip:
+    - sphinx_copybutton

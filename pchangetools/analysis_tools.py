@@ -1,3 +1,13 @@
+"""
+pchangetools.analysis_tools
+=========================
+Tools for generating graphics for teaching computational thinking from
+ECMWF reanalysis data. Initial work by Scott Collis scollis@anl.gov
+.. autosummary::
+    :toctree: generated/
+    Anal_Obj
+"""
+
 import xarray as xr
 
 
