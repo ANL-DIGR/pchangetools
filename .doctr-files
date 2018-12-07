@@ -1,3 +1,6 @@
+./_modules/index.html
+./_modules/pchangetools/analysis_tools.html
+./_sources/generated/pchangetools.analysis_tools.Anal_Obj.rst.txt
 ./_sources/index.rst.txt
 ./_sources/installation.rst.txt
 ./_sources/release-history.rst.txt
@@ -66,10 +69,12 @@
 ./_static/up-pressed.png
 ./_static/up.png
 ./_static/websupport.js
+./generated/pchangetools.analysis_tools.Anal_Obj.html
 ./genindex.html
 ./index.html
 ./installation.html
 ./objects.inv
+./py-modindex.html
 ./release-history.html
 ./search.html
 ./searchindex.js

@@ -1,0 +1,22 @@
+pchangetools.analysis\_tools.Anal\_Obj
+======================================
+
+.. currentmodule:: pchangetools.analysis_tools
+
+.. autoclass:: Anal_Obj
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Anal_Obj.__init__
+   
+   
+
+   
+   
+   
